@@ -3,6 +3,11 @@ body {
     font-size: 1.5em;
 }
 
+.img-meme {
+    width: 25em;
+    cursor: pointer;
+}
+
 article {
     max-width: 26em;
     margin: 1em auto;
@@ -11,4 +16,33 @@ article {
 .memes {
     max-width: 26em;
     margin: 1em auto;
+}
+
+.mem-title {
+    display: block;
+    cursor: pointer;
+}
+
+.mem-opened {
+    display: none;
+}
+
+
+.open-button {
+    appearance: none;
+    position: absolute;
+}
+
+.open-button:checked + .mem-opened {
+    display: block;
+    animation: appear 1s;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
