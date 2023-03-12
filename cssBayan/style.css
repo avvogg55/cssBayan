@@ -1,0 +1,47 @@
+body {
+    font-family: 'Anton', sans-serif;
+    font-size: 2em;
+}
+
+.img-meme {
+    width: 25em;
+    cursor: pointer;
+}
+
+article {
+    max-width: 26em;
+    margin: 1em auto;
+}
+
+.memes {
+    max-width: 26em;
+    margin: 1em auto;
+}
+
+.mem-title {
+    display: block;
+    cursor: pointer;
+}
+
+.mem-opened {
+    display: none;
+}
+
+.open-button {
+    appearance: none;
+    position: absolute;
+}
+
+.open-button:checked + .mem-opened {
+    display: block;
+    animation: appear 1.5s;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
