@@ -27,7 +27,6 @@ article {
     display: none;
 }
 
-
 .open-button {
     appearance: none;
     position: absolute;
@@ -35,7 +34,7 @@ article {
 
 .open-button:checked + .mem-opened {
     display: block;
-    animation: appear 1s;
+    animation: appear 1.5s;
 }
 
 @keyframes appear {
