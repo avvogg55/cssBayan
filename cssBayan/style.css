@@ -2,3 +2,13 @@ body {
     font-family: 'Anton', sans-serif;
     font-size: 1.5em;
 }
+
+article {
+    max-width: 26em;
+    margin: 1em auto;
+}
+
+.memes {
+    max-width: 26em;
+    margin: 1em auto;
+}
